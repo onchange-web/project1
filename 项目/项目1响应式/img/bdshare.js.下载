@@ -1,0 +1,53 @@
+var share_target_url;
+var share_target_sharetitle;
+var share_target_shareabstract;
+
+$('.bdsharebuttonbox>a').mouseover(function(){
+    var Tthis = $(this);
+    var url = window.location.href;
+    var oneurl;
+
+    if($(this).hasClass('popVideo')) {
+        var url = 'http://zf.xbcx.com.cn/shareVideo.php';
+    }
+    else{
+        var url = window.location.href;
+    }
+
+    oneurl = url;
+    if(url.indexOf('#') > 0){
+        oneurl = url.substring(0, url.indexOf('#'));
+    }
+    if(oneurl.indexOf('?')>0){
+        share_target_url =oneurl+"&"+Tthis.data("suffixe")+"&video_id="+Tthis.data("sharevideo");
+    }else{
+        share_target_url =oneurl+"?"+Tthis.data("suffixe")+"&video_id="+Tthis.data("sharevideo");
+    }
+    share_target_sharetitle =  Tthis.data("sharetitle");
+    share_target_shareabstract =  Tthis.data("shareabstract");
+});
+
+window._bd_share_config = {
+    common : {
+        onBeforeClick:function(cmd,config){
+
+            if (!share_target_url){
+                share_target_url = window.location.href;
+            }
+            config.bdUrl =share_target_url;
+            config.bdText = share_target_sharetitle;
+            config.bdDesc = share_target_shareabstract;
+            return config;
+        }
+    },
+
+    share : [{
+        "tag" : "share_1",
+        "bdSize" : 24
+    },{
+        "tag" : "share_2",
+        "bdSize" : 32
+    }]
+}
+
+with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];

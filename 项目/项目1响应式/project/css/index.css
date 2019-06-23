@@ -1,0 +1,158 @@
+.my_qydt{
+    text-align: center;
+}
+.my_qydt>h1{
+    font-size: 32px;
+}
+.my_qydt>span{
+    color:gray;
+    font-size:18px;
+}
+
+.myQydt_img>div>div>img{
+    width:540px;
+    height:340px;
+}
+.myQydt_img>div>div>div>p{
+    margin:0;
+    width:90px;
+    border-right:1px solid black;
+    font-size: 14px;
+    color: rgba(27,27,27,0.8);
+}
+.myQydt_img>div>p+a{
+    font-size:20px;
+    text-decoration:none;
+    color:black;
+}
+.xw>div>p{
+    border-right:1px solid black;
+    padding-right:15px;
+}
+.xw>a{
+    padding-left:15px;
+    text-decoration: none;
+    color:black;
+}
+.myQydt_font>.btn-info:hover{
+    color: black;
+}
+.myQydt_font a{
+    text-decoration: none;
+    font-size:20px;
+    color:#333;
+    font-weight:bold;
+}
+.myQydt_font p{
+    color:rgba(26,26,26,0.8);
+    font-size:14px;
+    margin-bottom:22px;
+    margin-top:3px; 
+}
+.myQydt_font>.btn-info{
+    background-color:white;
+    border-radius:0;
+    border-color: black;
+    font-weight: normal;
+}
+.qydr_wz{
+    width:540px;
+    height:340px;
+    float:right;
+    background-color:lightgray;
+}
+.container>h1{
+    text-align: center;
+    font-size:32px;
+}
+.container>p{
+    text-align: center;
+    color:gray;
+}
+.myHover-font{
+    width:360px;
+    height:163px;
+    font-weight: bold;
+    font-size:24px;
+    padding:30px 40px;
+    text-align:center;
+    background-image: url("../../img/1540974837.png");
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+}
+.myHover-font>p{
+    padding:60px 0;
+}
+.my_solution1{
+    top: 0;
+    transition:all .3s linear;
+}
+.myHover1{
+    width:360px;
+    height:459px;
+    background-color:#191B41;
+}
+.my_solution{
+
+    height:459px;
+    overflow: hidden;
+}
+.my_solution:hover>.my_solution1{
+    top:-459px;
+}
+.myHover1>img{
+    top:10%;
+    left:42%;
+}
+.myHover1-font1{
+    font-size:24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding-top:120px;
+    padding-bottom: 0px;
+}
+.myHover1-font2{
+    font-size:16px;
+    font-weight: normal;
+    color: white;
+}
+.myHover1-font2+a{
+    border-radius:0;
+    position: absolute;
+    top:70%;
+    left:36%;
+}
+.myH1-f1xg{
+   font-size: 20px; 
+}
+.myHover-bg{
+    background-color:#f3f3f3;
+}
+.myHover-bg1{
+    background-color:#eaeaea;
+}
+.myHover-bjt{
+    background-image: url("../../img/1532515364.png");
+}
+.myHover-bjt1{
+    background-image: url("../../img/1540977105.png");
+}
+.myHover-bjt2{
+    background-image: url("../../img/1524049107.png");
+}
+.myHover-bjt3{
+    background-image: url("../../img/1540815005.png");
+}
+.myHover-bjt4{
+    background-image: url("../../img/1527155243.png");
+}
+.myHover-bjt5{
+    background-image: url("../../img/1522406647.png");
+}
+.myHover-bjt6{
+    background-image: url("../../img/1522409272.png");
+}
+.myHover-bjt7{
+    background-image: url("../../img/1522406882.png");
+}

@@ -1,0 +1,142 @@
+/*产品中心*/
+
+/*.top-banner.zhifa-banner{background: url(../images/public/product_banner_zhifa.png) no-repeat right bottom,linear-gradient(120deg,#1b1358,#3caae9);}*/
+/*.top-banner.huanwei-banner{background: url(../images/public/product_banner_huanwei.png) no-repeat right bottom,linear-gradient(120deg,#0086a8,#2dd4a7);}*/
+/*.top-banner.dashuju-banner{background: url(../images/public/zhifa_banner.png) no-repeat right center,linear-gradient(120deg,#1b1358,#3caae9);}*/
+/*.top-banner.daliandong-banner{background: url(../images/public/daliandong_banner.jpg) no-repeat right center,linear-gradient(120deg,#00022f,#19293a);}*/
+
+.product-panel{padding:50px 0;}
+.product-panel:nth-child(2n){background-color:#f2f5f7;}
+.product-panel-inner{max-width:1200px;margin:0 auto;overflow:hidden;}
+.product-btn-go{display:block;color:#006cfe;font-size:16px;text-align:center;}
+
+.product-cell-item{display:inline-block;vertical-align:top;margin:0 1%;;padding:0 15px;box-sizing:border-box;text-align: center;}
+/*.product-cell-item .item-img{height:120px;}*/
+.product-cell-item img{margin:0 auto;}
+.product-cell-item h4{font-size:20px;color:#30304f;margin:25px 0 10px;}
+.product-cell-item p{color:#4c4c4c;line-height:24px;font-size:16px;}
+.smallIcon .product-cell-item img{width:80px;}
+
+.product-panel-con{margin-top:30px;overflow:hidden;}
+.product-panel-con .panel-con-img{display:inline-block;vertical-align: middle;width:50%;margin:0 2%;}
+.panel-con-img img{width:100%;}
+.product-img{margin:20px auto;}
+.product-img img{margin:0 auto;width:100%;}
+.product-des{text-align:left;color: #666;
+    line-height: 24px;
+    font-size: 16px;
+    padding-top: 10px;
+    width: 800px;
+    margin: 0 auto;}
+.product-des p{text-indent:2em;}
+
+.product-panel-con .panel-con-wz{display:inline-block;vertical-align: middle;width:45%;}
+.panel-con-wz .product-cell-item{display:inline-block;width:100%;text-align:left;margin-bottom:30px;}
+.panel-con-wz img{display:inline-block;vertical-align: middle;margin-right:20px;width:80px;}
+.panel-con-wz .item-desc{display:inline-block;vertical-align: middle;width:65%;}
+.panel-con-wz .item-desc h4{margin-top:0;}
+
+
+.product-panel.white-style .section-title h1,.product-panel.white-style .product-cell-item h4,.product-panel.white-style .product-cell-item p{color:#fff;}
+.product-panel.white-style .product-cell{padding-top:30px;}
+.product-panel-wrapper{display:inline-block;vertical-align: middle;width:48%;padding-left:50px;box-sizing: border-box;}
+.product-panel-wrapper .wrapper-title{font-size:32px;color:#2e2e45;}
+.product-panel-wrapper .wrapper-des{display:block;padding:20px 0;color:#666;font-size:16px;}
+.product-panel-wrapper a{text-align: left;}
+.product-panel-wrapper img{display:block;width:100%;}
+.section-title.text-left p{text-align:left;text-indent:2em;}
+
+/*大数据解决方案*/
+.bigData-panel{padding:50px 0;}
+.bigData-panel:nth-child(2n){background-color:#f2f5f7;}
+.bigData-panel-title{font-size:32px;color:#2e2e45;text-align:center;}
+.bigData-panel-con{max-width:1200px;margin:0 auto;}
+.bigData-panel-con .con-tit{font-size:24px;color:#30304f;font-weight:bold;}
+.bigData-panel-con .con-des{font-size:16px;color:#434343;line-height:24px;}
+.bigData-panel-con .con-des img{float:left;width:40px;margin-right:15px;}
+.bigData-panel-model{margin-top:50px;overflow:hidden;}
+.bigData-panel-model img{width:100%;}
+.bigData-panel-model .con-des{padding:20px 0;}
+.bigData-panel-leftImgModel .img{float:left;width:305px;}
+.bigData-panel-leftImgModel .con{margin-left:340px;border-bottom:1px solid #dddde2}
+
+.bigData-panel-rightImgModel .img{float:right;width:610px;margin-left:-610px;}
+.bigData-panel-rightImgModel .con{margin-right:630px;}
+
+.bigData-panel-item{display:inline-block;vertical-align:top;width:500px;margin-top:90px;}
+.bigData-panel-item.rt{float:right;}
+.bigData-panel-item .item-icon{float:left;width:80px;height:80px;}
+.bigData-panel-item .item-icon img{width:100%;}
+.bigData-panel-item .item-right{margin-left:90px;}
+.bigData-panel-item .item-right .con-tit{font-size:22px;padding-bottom:15px;}
+
+.liandong-container .bigData-panel-leftImgModel .con{border:none;}
+.liandong-container .bigData-panel-model .con-des{padding:0 0 20px;}
+.liandong-container .bigData-panel-model .con-tit{padding-bottom:20px}
+
+.jzjs-content{width:1200px;margin:0 auto;padding:75px 0 50px;background:url(../images/solution/daliandong/jizhi_bg.png) no-repeat center;color:#fff;}
+.jzjs-title{font-size:26px;text-align: center;margin-top:75px;}
+.jzjs-list{font-size:16px;width:610px;padding-left:20px;margin:25px auto 0;}
+.jzjs-list p{display:inline-block;vertical-align:top;width:300px;box-sizing:border-box;padding-left:15px;margin:6px 0;background:url(../images/solution/circle.png) no-repeat left center;}
+
+.jzjs-jianshe{text-align:center;margin-top:50px;}
+.jzjs-jianshe-item{display:inline-block;vertical-align: top;width:70px;margin:0 35px;font-size:16px;font-weight:bold;}
+.jzjs-jianshe-item p{line-height:24px;margin-top:10px;}
+
+.liandong-title-secd{width:920px;font-size:18px;line-height:30px;color:#434343;text-align:center;margin:20px auto 0;}
+.liandong-con-box{margin-top:80px;text-align:center;font-size:16px;color:#434343}
+.liandong-con-box img{margin:15px auto;}
+.liandong-con-box span{font-weight:bold;}
+.liandong-con-item{display:inline-block;vertical-align: top;}
+.liandong-img img{margin:50px auto;}
+
+.solution-con-inner{padding:60px 0;}
+.solution-box{max-width:65%;margin:0 auto;text-align:center;font-size: 0;}
+.solution-box .solution-box-item{width:33%;margin:15px 0;}
+
+.solution-detail-con{max-width:800px;margin:0 auto;padding:50px 0;}
+.solution-detail-con ul li{list-style:square;}
+
+
+.solution-hot-title{font-size:30px;padding-left:15px;text-align: center;}
+
+
+
+
+.product-navs{position: absolute;background-color: #f9f9f9;}
+.product-posit{border: 1px solid rgb( 198, 198, 198 );box-shadow: 0px 0px 10px 0px rgba( 34, 23, 20,0.15);transition: all .5s ease-in-out;}
+.product-nav-xiangguan ul {border: 1px solid rgb( 226, 226, 226 );border-right: 0}
+.product-navs h4{font-size: 18px;color: #1177ee;text-align: left;padding: 0 20px;height: 60px;line-height: 60px;background-color: #f6f6f6;border-bottom: 1px solid rgb( 226, 226, 226 );}
+.product-navs ul a,.product-nav-block{display: block;position: relative;font-size: 16px;color: #73787f;white-space: nowrap;padding: 0 20px;height: 50px;line-height: 50px;background-color: #f9f9f9;}
+.product-arrow{background: url("../images/solution/arrowr-black.png") no-repeat center;display: inline-block;width: 10px;height: 100%;position: absolute;right: 15px;}
+.product-nav-list{position: absolute;left: 200px;bottom: -1px;display: none;border: 1px solid #c6c6c6;border-left: 0;}
+.product-nav-list a{background-color: #f3f3f3 !important;}
+.product-nav-block:hover,
+.product-navs ul a:hover,
+.product-nav-list a:hover{background-color: #1177ee !important;color: #fff}
+.product-nav-block:hover .product-nav-list{display: block;}
+.product-nav-block:hover .product-arrow{background: url("../images/solution/arrowr.png") no-repeat center;}
+.isFixed{position: fixed;top: 80px;}
+.product-shouqi{position: absolute;right: 0;top: 0;width: 60px;height: 60px;background-color: #1177ee;color: #fff;line-height: 60px;font-size: 14px;font-weight: bold;text-align: center;cursor: pointer}
+.product-zhankai{position: absolute;left: 0;top: 0;width: 60px;height: 60px;background-color: #1177ee;color: #fff;line-height: 60px;font-size: 14px;font-weight: bold;text-align: center;cursor: pointer;display: none}
+
+
+
+@media screen and (max-width:1366px){
+    .product-panel-inner,.bigData-panel-con,.jzjs-content{max-width:1000px;}
+    .bigData-panel-item{width:480px;}
+    .product-navs h4{height: 35px;line-height: 35px;}
+    .product-navs ul a, .product-nav-block{font-size: 14px;height: 40px;line-height: 40px;padding: 0 10px}
+    .product-nav-icon,.product-nav-iconHover{width: 26px;height: 26px;margin-right: 2px;}
+    .solution-box{max-width: 75%}
+    .product-shouqi,.product-zhankai{height: 37px;line-height: 37px}
+}
+
+@media screen and (max-width:1024px){
+    .product-panel-inner,.bigData-panel-con,.jzjs-content{max-width:900px;}
+    .product-panel-wrapper .wrapper-title{font-size:26px;}
+    .bigData-panel-item{width:430px;}
+    .product-navs ul a, .product-nav-block{height: 30px;line-height: 30px;}
+}
+
+

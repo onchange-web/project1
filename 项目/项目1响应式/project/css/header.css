@@ -1,0 +1,81 @@
+.my_size{
+    height:100px;
+}
+a:hover{
+    text-decoration: none;
+}
+.my_sy{
+    margin-top:9px; 
+}
+.my_hover{
+    transition:background-color .5s ease-in-out;
+}
+.my_hover:hover{
+    background:#102252;
+    color:#fff;
+}
+ul.nav-tabs{
+    border-bottom:none;
+}
+.my_product:hover>div{
+    display:block;
+}
+.my_product>div{
+    transition: all .2s;
+    display:none;
+    width:1200px;
+    background: #102252;
+}
+.my_product>div{
+    left:-500px;
+}
+.my_product>div>div>ul>li>a{
+    color:gray;
+}
+.my_product>div>div>ul>li>a:hover{
+    color:white;
+}
+.my_product>div ul li{
+    padding:5px 0px;
+    margin:0px 65px;
+}
+.my_product>div>div>ul>li:first-child{
+    border-bottom:1px solid gray; 
+}
+#content>ul>li{
+    margin-left:30px;
+}
+.my_image{
+    margin-left:140px;
+}
+.my_sever>div>div{
+    overflow: hidden;
+    height:0;
+}
+.my_sever:hover>div>div{
+    display:block;
+    height:216px;
+    transition: height .2s linear;
+    left:0px;
+}
+.my_sever>div>div>ul>li{
+    width:200px;
+    background-color:#102252;
+    padding:15px 0px;
+}
+.my_sever>div>div{
+    margin-left:-40px !important;
+}
+.my_sever>div>div>ul>li>a{
+    color:gray;
+    margin-left:45px;
+}
+.my_sever>div>div>ul>li>a:hover{
+    color:white;
+}
+.my_gyxb>div>div>ul>li>a{
+    margin-left:55px !important;
+}
+.my_gyxb>div>div>ul>li{
+    width:180px;
+}

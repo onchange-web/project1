@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/*关于我们*/
+
+
+.about_tit{font-size: 34px;text-align: center;padding: 10px 0;font-weight: bold}
+.about_comp,.about_team{background-color: #f2f5f7}
+.about_comp_con{max-width:1200px;margin: 0 auto;padding: 60px 0;}
+.about_comp_img{width: 48%;display: inline-block;vertical-align: top;}
+.about_comp_text{display: inline-block;vertical-align:top;width: 46%;padding-left: 40px}
+.about_comp_text p{padding-top: 20px;line-height:22px;text-indent:2em;font-size: 17px;}
+
+.about_team{padding: 100px 0;margin-top:-30px;}
+.about_team_texts{position:relative;height:160px;}
+.about_team_text{position:absolute;width:50%; left:50%;margin-left:-25%;padding: 40px 0 80px;font-size:18px;line-height:30px;text-align:center;opacity:0;transition:all .4s ease-in-out;}
+.about_team_text.show{opacity:1;}
+.about_team_pics{max-width: 1200px; margin: 0 auto;font-size: 0}
+.about_team_pics img{width: 100%}
+.about_develop{padding-top:100px;margin-top:-30px;text-align:center;}
+.clear{clear: both}
+
+.about_team_mark{margin:0 auto;}
+.about_team_peos{padding: 20px 0 50px;max-width: 1200px; margin: 0 auto;text-align: center;}
+.about_team_peo{display: inline-block;width: 16%;text-align: center;color:#666;}
+
+.about_team_peos img{margin: 0 auto}
+.about_team_peo p{font-size:18px;font-weight:bold;padding-top:20px;}
+.about_team_img{position:relative;height:160px;}
+.about_team_img .img-hover{position:absolute;top:0;left:50%;margin-left:-80px;opacity:0;transition:all .4s ease-in-out;}
+.about_team_img .img-normal{position:absolute;top:50%;left:50%;margin-left:-70px;margin-top:-70px;opacity:1;transition:all .4s ease-in-out;}
+.about_team_peo.cur{color:#333;}
+.about_team_peo.cur .img-hover{opacity:1}
+.about_team_peo.cur .img-normal{opacity:0;}
+.team-img-top{display: table;width:100%;}
+.team-img-box {display: inline-block; vertical-align: top; float: left; }
+.team-img-big {padding: 5px 0; display: inline-block;vertical-align: top;width:50%;}
+.team-img-top-rt {display: inline-block; padding-left: 5px;padding-top:5px;vertical-align: top;width:49%;float:right;}
+.team-img-small {width: 33%}
+
+
+.about_spirit{padding-top: 100px;margin-top:-30px;background: url("../images/about/spirit_bg.png") no-repeat left center;background-size:cover;color: #fff}
+.about_spirit_con{max-width: 975px;margin: 0 auto;padding: 120px 0 190px;}
+.about_spirit_left,.about_spirit_center,.about_spirit_right{display: inline-block; width: 28%; margin: 0 2%;text-align: center;vertical-align: top;border: 1px solid;border-top:none;position: relative;height: 300px}
+.about_spirit_right{margin: 0 0 0 2%;}
+.about_spirit img{margin:50px auto 0;}
+.about_spirit p{margin-top: 15px;padding: 0 15px;}
+.about_spirit h3{font-size: 18px}
+.about_spirit .panel-title .title-line{background-color: #fff}
+.about_spirit .panel-title h1{color: #fff}
+.about_spirit_line_left{position: absolute; left: 0; display: inline-block; width: 30%; height: 1px; background-color: #fff; vertical-align: top;}
+.about_spirit_line_right{display: inline-block; width: 30%; height: 1px; background-color: #fff; vertical-align: top; position: absolute; right: 0;}
+.about_spirit_tit{position: absolute; width: 100%; top: -10px;font-size:18px;font-weight:bold;}
+.about_spirit_pic{height: 120px}
+
+.about_comp{padding-top:40px;margin-top:-10px;}
+.about_comp .section-title{text-align: left}
+
+.about_yanfa{padding-top: 100px;margin-top:-30px;padding-bottom:60px;}
+.about_yanfa img{margin:0 auto;}
+
+.develop-item{margin-bottom:80px;}
+.develop-text{display:inline-block;vertical-align:top;width:360px;text-align:right;}
+.develop-text.rt{text-align:left;}
+.develop-text h4{font-size:18px;font-weight:bold;}
+.develop-text p{color:#6c6c6c;line-height:20px;padding-top:18px;}
+.develop-year{position:relative;display:inline-block;vertical-align:top;margin:0 70px;font-size:24px;font-weight:bold;color:#000;}
+.develop-img{display:inline-block;vertical-align:middle;}
+.develop-line{display:block;position:absolute;width:2px;height:190px;top:40px;left:50%;background:rgba(0,0,0,0.7);}
+
+@media screen and (max-width:1600px){
+    .about_yanfa .img-4{display:block;width:1200px;}
+}
+
+@media screen and (max-width:1366px){
+    .about_comp_con,.about_team_peos,.about_team_pics{max-width:1000px;}
+}
+
+@media screen and (max-width:1024px){
+    .about_comp_con,.about_team_peos,.about_team_pics{max-width:900px;}
+}

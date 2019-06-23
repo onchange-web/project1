@@ -1,0 +1,183 @@
+
+//导航下拉菜单
+$('.header-nav-menu').mouseenter(function(){
+    var hasChild = $(this).find('.header-subnav').length;
+    if(hasChild > 0){
+        $(this).find('.header-subnav').stop().slideDown('fast');
+
+    }
+}).mouseleave(function(){
+    $(this).find('.header-subnav').stop().slideUp('fast');
+});
+
+
+$(window).scroll( function() {
+    if($(window).scrollTop() > 0){
+        $('.header').addClass('scroll')
+    }else{
+        $('.header').removeClass('scroll')
+    }
+
+});
+
+
+
+var scrollFun = function(){
+
+    var width = ($('.scroll-container').width() - 60)/4;
+    $(".scroll-item").width(width);
+    var img_len = $(".scroll-item").length;
+    var img_wd = width;
+
+    var num = 0;
+    if(img_len < 5){
+        $(".scroll-next,.scroll-prev").hide();
+        $('.scroll-container ul').css({
+            'width':'100%',
+            'text-align':'center'
+        })
+    }
+    if ($(".scroll-container ul li").length > 4) {
+        $(".scroll-container ul").append($(".scroll-container ul").html());
+    }
+
+    $(".scroll-next").click(function(){
+        if(num == img_len){
+            num = 0;
+            $(".scroll-container ul").css("left",0);
+        }
+        num++;
+        move(-num);
+
+    });
+
+    $(".scroll-prev").click(function(){
+        if(num == 0){
+            num = img_len;
+            $(".scroll-container ul").css("left",-num * (img_wd+13) + "px");
+        }
+        num--;
+        move(-num);
+
+    });
+
+    function move(num){
+        $(".scroll-container ul").stop().animate({
+            left:num * (img_wd+13) + "px"
+        })
+    }
+};
+
+// scrollFun();
+
+
+
+
+autoRound('.honor-cell','.honor-img-big div');
+autoRound('.about_team_peo','.about_team_text');
+function autoRound(item,detail){
+    var $item = $(item);
+    var $detail = $(detail);
+
+    var i =0;
+    var length =  $item.length;
+    var t = setInterval(function () {
+        i++;
+        if(i == length){
+            i=0;
+        }
+        $item.eq(i).addClass('cur').siblings().removeClass('cur');
+        $detail.eq(i).addClass('show').siblings().removeClass('show');
+    },4000);
+
+    $item.mouseenter(function(){
+        clearInterval(t);
+        var i =$(this).index();
+        $(this).addClass('cur').siblings().removeClass('cur');
+        $detail.eq(i).addClass('show').siblings().removeClass('show');
+    });
+
+    $item.mouseleave(function(){
+        var i = $(this).index();
+        t = setInterval(function () {
+            i++;
+            if(i == length){
+                i=0;
+            }
+            $item.eq(i).addClass('cur').siblings().removeClass('cur');
+            $detail.eq(i).addClass('show').siblings().removeClass('show');
+        },4000);
+    })
+}
+
+
+indexBanner();
+function indexBanner(){
+    var t = n =0;
+    var width =$('.banner-inner-tab .tab-item').width();
+    var count=$(".banner-inner-item").length;
+    $('.banner-inner-tab .tab-line img').width(width);
+
+    $(".banner-inner-tab .tab-item").click(function() {
+        var i = $(this).index();
+        n = i;
+        if (i >= count) {
+            return;
+        }
+
+        $(".banner-inner-item").eq(i).addClass("show").siblings().removeClass("show");
+        $('.tab-line img').css({
+            'transform':'translateX('+(width * i)+'px)'
+        })
+        // if(i == 1){
+        //     $('.tab-line img').css({
+        //         'transform':'translateX('+(width * i)+'px)'
+        //     })
+        // }else{
+        //     $('.tab-line img').css({
+        //         'transform':'translateX('+(width * i)+'px)'
+        //     })
+        // }
+
+    });
+
+    t = setInterval(showAuto,8000);
+
+    $(".banner-inner-tab").hover(function(){
+        clearInterval(t)
+    }, function(){
+        t = setInterval(showAuto,8000);
+    });
+
+    function showAuto()
+    {
+        n = n >=(count -1) ?0 : ++n;
+        $(".banner-inner-tab .tab-item").eq(n).trigger('click');
+
+    }
+
+}
+
+
+
+$(".back-top").on('click',function(){
+    $('body,html').animate({scrollTop:0},500);
+    return true;
+});
+
+$('.product-shouqi').click(function () {
+    var w=$('.product-posit').width();
+    $('.product-posit').css('margin-left',-w);
+    setTimeout(function () {
+        $('.product-zhankai').show();
+        $(this).hide();
+    },400)
+});
+$('.product-zhankai').click(function () {
+    $('.product-posit').css('margin-left',0);
+    $('.product-shouqi').show();
+    $(this).hide();
+});
+
+
+

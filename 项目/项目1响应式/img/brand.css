@@ -1,0 +1,72 @@
+/*共用*/
+
+.brand-sub-container {max-width: 1200px;margin: 0 auto;padding: 50px 0;box-sizing:border-box;text-align: center;}
+.brand-sub-container h3 {text-align: center;margin: 20px 0 20px 0;}
+
+.honor-cell {display:table-cell;vertical-align: top;}
+.honor-cell img{margin:0 auto;}
+
+/*品牌&合作伙伴*/
+
+.brand-partner{max-width:1200px;}
+.brand-partner-item{display:inline-block;vertical-align:top;width:360px;margin:0 1%;}
+.brand-partner-item .partner-depart{font-size:16px;font-weight:bold;color:#000;margin-top:30px;}
+.brand-partner-item .partner-img{position:relative;width:100%;}
+.brand-partner-item .partner-img img{width:100%;}
+.partner-img-hover{position:absolute;display:table;transition:all .4s cubic-bezier(.4,0,.2,1);opacity:0;top:0;left:0;width:100%;height:284px;padding:0 20px;box-sizing: border-box;background:rgba(0,0,0,0.7)}
+.partner-img-hover p{display:table-cell;vertical-align: middle;color:#fff;}
+.brand-partner-item .partner-img:hover .partner-img-hover{opacity:1}
+
+
+/*主要荣誉与头衔*/
+.honor-img-big{position:relative;height:500px;}
+.honor-img-big div{position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;opacity:0;transition:all .4s ease-in-out;}
+.honor-img-big div.show{opacity:1;}
+.honor-img-big img{margin:0 auto;}
+.honor-img-group{display:table;width:100%;}
+.honor-img-group img {display: inline-block;}
+.honor-cell-img{position:relative;height:115px;margin-bottom:10px;}
+.honor-cell-img .img-hover{position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;opacity:0;transition:all .4s ease-in-out;}
+.honor-cell-img .img-normal{position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;opacity:1;transition:all .4s ease-in-out;}
+.honor-cell.cur .img-hover{opacity:1}
+.honor-cell.cur .img-normal{opacity:0;}
+
+/*独创六项国家专利技术*/
+.brand-patent{background:url(../images/brand/4_tbg.png) no-repeat center;color:#fff;}
+.brand-patent .brand-sub-container{margin-top:20px;padding-top:50px;padding-bottom:0;}
+.brand-patent .panel-title,.brand-patent .panel-title h1{color:#fff;}
+.brand-patent .panel-title h2{padding-top:80px;font-weight:bold;}
+.brand-patent .title-line{background:#fff;}
+.brand-patent .honor-cell p{color:#fff;margin-top:25px;font-size:16px;}
+/*.patent-img-group{display:table;width:100%;}*/
+.patent-img-group .honor-cell{display:inline-block;vertical-align:top;width:176px;margin:0 10px;}
+
+.patent-content {margin-top:50px;}
+.patent-content h4{font-size:18px;}
+.patent-content .patent-text{display:inline-block;vertical-align:middle;line-height:48px;text-align:right;}
+.patent-content .patent-text p{padding-right:20px;background:url(../images/brand/4_tcircle.png) no-repeat right;}
+.patent-content .patent-text.rt{text-align:left;}
+.patent-content .patent-text.rt p{padding-left:20px;background:url(../images/brand/4_tcircle.png) no-repeat left;padding-right:0;}
+.patent-content img{display:inline-block;vertical-align:middle;}
+.certificate-img-group img{display:inline-block;width:23%;margin:8px;}
+
+@media screen and (max-width:1366px){
+    .brand-sub-container{max-width:1000px;}
+    .patent-content img{width:480px}
+    .patent-img-group .honor-cell{margin:0;width:163px;}
+    .brand-partner-item{width:300px;}
+    .partner-img-hover{height:237px;}
+}
+
+@media screen and (max-width:1024px){
+    .brand-sub-container{max-width:900px;}
+    .patent-content img{width:340px}
+    .brand-patent .honor-cell p{font-size:14px;margin-top:20px;}
+    .honor-cell img{width:100px;}
+    .honor-cell p{font-size:12px;margin-top:20px;}
+    .patent-img-group .honor-cell{width:145px;}
+    .brand-partner-item{width:270px;}
+    .partner-img-hover{height:213px;}
+}
+
+

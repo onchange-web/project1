@@ -1,0 +1,29 @@
+a{
+    color:gray;
+}
+a:hover{
+    color:white;
+    text-decoration: none;
+}
+ul{
+    list-style:none;
+}
+#container-fluid{
+    background-color:#102252;
+}
+h5{
+    color:white;
+}
+li{
+    padding:5px 0;
+}
+hr{
+    color:gray;
+}
+p{
+    text-align:center;
+    margin-top:10px;
+}
+.line{
+    border-top:1px solid gray;
+}

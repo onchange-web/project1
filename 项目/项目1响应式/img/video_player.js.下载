@@ -1,0 +1,70 @@
+/**
+ * Created by Lucifer on 16/7/30.
+ */
+
+
+(function () {
+
+    var palyers = {};
+    window.TPlayer = {
+        play:function(eleID,fileId,auto_play,size){
+            if(!size){
+                size = {
+                    width:614,
+                    height:381
+                };
+            }
+            var option = {
+                "auto_play": auto_play,
+                "file_id": fileId,
+                "app_id": "1252000488",
+                "width": size.width,
+                "height": size.height
+            };
+            /*调用播放器进行播放*/
+            palyers[eleID] = new qcVideo.Player(
+                /*代码中的id_video_container将会作为播放器放置的容器使用, 可自行替换*/
+                eleID,
+                option
+            );
+            return palyers[eleID];
+        },
+        pasue:function (eleID) {
+            palyers[eleID].pause();
+        },
+        pasueAll:function () {
+            $.each(palyers,function(i,n){
+                n.pause();
+            })
+        },
+        change:function(eleID,fileId,auto_play,size){
+            if(!palyers[eleID]){
+                this.play(eleID,fileId,auto_play,size);
+            }
+            palyers[eleID].changeVideo({
+                "app_id": "1252000488",
+                "file_id":fileId,
+                auto_play:auto_play
+            });
+        },
+        livePlay:function(eleID,url,size){
+            //http://ptest-meeket.xbwq.com.cn/meeket/viewer/live/viewer/index?a=d722031322a3224696f5d6f63622c22283131322a3224696f5566796c622b7
+            if(!size){
+                size = {
+                    width:614,
+                    height:381
+                };
+            }
+            if($('iframe_'+eleID).length){
+                return;
+            }
+            $('#'+eleID).html('<iframe id="iframe_'+eleID+'" src="'+url+'&is_full_play=1&v_height='+size.height+'"' +
+                    'height="'+size.height+'" width="'+size.width+'" frameborder="0"></iframe>');
+
+        },
+        liveStop:function(eleID){
+            $('#'+eleID).html('');
+        }
+    }
+
+})();
